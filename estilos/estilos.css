@@ -95,6 +95,7 @@ main{
     background-color: lightblue;
     color: #6d24ff;
     text-decoration: none;
+    transition: all 2s;
 }
 h1{
     text-align: center;
@@ -102,6 +103,9 @@ h1{
 .call:hover{
     background-color: lightcoral;
     height: 200px;
+}
+.call a:hover{
+    background-color: rgb(255, 255, 117);
 }
 .contacto{
     float: right;
