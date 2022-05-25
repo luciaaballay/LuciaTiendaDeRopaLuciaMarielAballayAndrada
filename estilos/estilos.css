@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: pink;
+}
+header{
+    background-image: url(../assets/img/logodesign3.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #8c52ff;
+    background-size: 200px 140px;
+    height: 140px;
+    width: 100%;
+}
+.nav1{
+    float: left;
+    position: fixed;
+}
+ul{
+    list-style: none;
+    font-size: 0;
+}
+li{
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    font-size: 15px;
+    color: rgb(99, 54, 150);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+li a:hover{
+    color: white;
+}
+li a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.icon{
+    min-height: 90px;
+    width: 100%;
+    text-align: end;
+    font-size: 20px;
+    color:lightblue;
+    letter-spacing: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+div p{
+    text-align: center;
+    color: rgb(198, 212, 212);
+}
+div form{
+    padding: 10px;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: #dfb6f0;
+    background-image: url(../assets/img/vestido1000.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.call{
+    float: right;
+    width: 50%;
+    color: #6d24ff;
+    background-color: #b68ec7a9;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 45px;
+    text-align: center;
+}
+.call p{
+    color: white;
+    margin-bottom: 40px;
+}
+.call a{
+    height: 30px;
+    width: 80px;
+    padding: 10px 20px;
+    background-color: lightblue;
+    color: #6d24ff;
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+}
+.contacto{
+    float: right;
+    width: 50%;
+    color: #6d24ff;
+    background-color: #c58ec7a9;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 45px;
+    text-align: center;
+}
+.contenedor{
+    width: 100%;
+    min-height: 400px;
+    background-color: #b68ec7;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-gap: 50px 20px;
+    grid-template-areas: "item1 item2"
+                        " item3 item4"
+                        " item5 item6"
+                        " item7 item8";
+    }
+    
+.item{
+    border: 2px solid #8c52ff;
+    min-height: 130px;
+    width: 100%;
+}
+.item:hover{
+    transform: scale(1.10);
+    transition: all 0.7s;
+}
+.item1{
+    grid-area: item1;
+    background-image: url(../assets/img/vestido1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item2{
+    grid-area: item2;
+    background-image: url(../assets/img/vestido2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.item3{
+    grid-area: item3;
+    background-image: url(../assets/img/vestido4.jpg);
+    background-position: center;
+}
+.item4{
+    grid-area: item4;
+    background-image: url(../assets/img/vestido3.jpg);
+    background-position: center;
+}
+.item5{
+    grid-area: item5;
+    background-image: url(../assets/img/vestido5.png);
+    background-position: center;
+}
+.item6{
+    grid-area: item6;
+    background-image: url(../assets/img/vestido6.jpg);
+    background-position: center;
+}
+.item7{
+    grid-area: item7;
+    background-image: url(../assets/img/vestido7.jpg);
+    background-position: center;
+}
+.item8{
+    grid-area: item8;
+    background-image: url(../assets/img/vestido8.png);
+    background-position: center;
+}
+
+@media only screen and (min-width: 480px) and (max-width:599px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+footer{
+    min-height: 90px;
+    width: 100%;
+    background-color: #8c52ff;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+footer p{
+    margin-bottom: 20px;
+}
+footer i{
+    font-size: 40px;
+    color: lightblue;
+    letter-spacing: 10px;
+}
+.subir{
+    height: 50px;
+    width: 50px;
+    background-color: lightpink;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 5px solid #6d24ff;
+    box-shadow: 0 0 10px #b68ec7;
+    text-decoration: none;
+}
